@@ -106,15 +106,35 @@ li a:hover{
     max-width:100%;
     height:auto;
 }
-.hire{
+#date{
+    color: rgb(101, 199, 122);
+    padding: 10px;
+}
+.innerResume{
+    background-color: rgb(38, 42, 66);
+    border-radius: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    float: left;
+    height: 300px;
+    width: 100%;
+}
+.Resume{
+    padding: 10px;
+    margin-top: -5px;
+}
+.me{
+    width: 200px;
+    border-radius: 100px;
+}
+/*.hire{
     text-align: center;
     position: absolute;
     left: 22%;
     transform: translate(-50%, -50%);
-}
+}*/
 .HM{
     border: rgb(255, 255, 255);
-    color: rgb(137, 146, 201);
+    color: rgb(92, 143, 224);
     font-weight: 700;
     font-size: large;
     border-radius: 27px 27px;
@@ -133,10 +153,7 @@ li a:hover{
     padding-left: 10%;
     padding-right: 10%;
 }
-/*.innerAbout{
-    background-color: rgb(48, 50, 66);
-    border-radius: 10px 10px;
-}*/
+
 .heading{
     /*background-color: rgb(22, 25, 49);*/
     color: rgb(104, 233, 136);
@@ -144,6 +161,45 @@ li a:hover{
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
 }
+.subHeading{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(92, 143, 224);
+    font-weight: bold;
+}
+/* Container for language bars */
+.lang {
+    width: 100%;
+    background-color: rgb(38, 42, 66);
+  }
+  .lang {
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: rgb(104, 233, 136); 
+  }
+.eng{width: 80%;background-color: rgb(49, 62, 117);}
+.kan{width: 80%;background-color: rgb(49, 62, 117);}
+.hin{width: 50%;background-color: rgb(49, 62, 117);}
+.jap{width: 10%;background-color: rgb(49, 62, 117);}
+.c{
+    float: left;
+    width: 50%;
+}
+#d{
+    padding-left: 16%;
+}
+.d{
+    align-self: center;
+    float: left;
+    
+}
+@media screen and (max-width: 600px) {
+    .c {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
 #About{
     padding-top: 5%;
     padding-bottom: 5%;
