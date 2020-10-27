@@ -134,11 +134,11 @@ li a:hover{
 }*/
 .HM{
     border: rgb(255, 255, 255);
-    color: rgb(92, 143, 224);
+    color: rgb(88, 190, 114)/*rgb(92, 143, 224)*/;
     font-weight: 700;
     font-size: large;
     border-radius: 27px 27px;
-    background-color: rgb(38, 42, 66);
+    background-color: rgb(44, 50, 83);
     padding: 15px;
     transition: 0.5s;
     
@@ -159,6 +159,7 @@ li a:hover{
     color: rgb(104, 233, 136);
     text-align: center;
     font-size: x-large;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 .subHeading{
@@ -221,25 +222,37 @@ li a:hover{
     width: 31%;
     padding:  5px;
     padding-top: 5px;
-    height: 300px;
+    height: 400px;
 }
 .innerProject{
     background-color: rgb(38, 42, 66);
     border-radius: 10px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     float: left;
-    height: 300px;
+    height: 400px;
     width: 100%;
 
+}
+#devices{
+    
+    width: auto;
+    height: 150px;
 }
 .innerSkills{
     background-color: rgb(38, 42, 66);
     border-radius: 10px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     float: left;
-    height: 300px;
+    height: 400px;
     width: 100%;
 
+}
+.b{
+    color: rgb(92, 143, 224);
+}
+#skills{
+    padding-top: 10%;
+    color: rgb(104, 233, 136);
 }
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
