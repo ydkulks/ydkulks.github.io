@@ -5,250 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YDKulkarni | Portfolio</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+  <link href="output.css" rel="stylesheet">
+  <!-- <script src="https://unpkg.com/htmx.org@2.0.1"></script> -->
   <!-- python3 -m http.server -->
   <style>
     * {
-      outline: 1px solid tomato;
+      /*outline: 1px solid tomato;*/
     }
   </style>
 </head>
 
-<body>
-  <a href="assets/Resume template (Community).pdf" download="YDKulkarni.pdf">
-    <button
-      class="rounded-md text-sm font-medium border border-gray-200 bg-background hover:bg-gray-200 h-10 px-4 py-2 items-center gap-2">
-      Download
-    </button>
-  </a>
-
-  <div class="flex flex-col min-h-[100dvh]">
-
-    <header class="px-4 lg:px-6 h-14 flex items-center">
-      <a class="flex items-center justify-center" href="#">
+<body class="bg-[rgb(32,32,32)]">
+  <img src="assets/HeroTop.png" alt="HeroTop" class="absolute top-0 right-0 object-cover z-0" />
+  <img src="assets/HeroBottom.png" alt="HeroBottom" class="absolute top-40 left-0 object-cover z-0" />
+  <img src="assets/HeroCircle.png" alt="HeroCircle" class="absolute top-52 left-48 object-cover z-0" />
+  <div class="relative z-20">
+    <header class="px-4 lg:px-6 h-14 flex items-center xl:mx-12">
+      <a class="flex items-center justify-center text-slate-300" href="https://ydkulks.github.io" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
           <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
         </svg>
         <span class="sr-only">Portfolio</span>
       </a>
-      <nav class="ml-auto flex gap-4 sm:gap-6">
-        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+      <nav class="ml-auto flex gap-4 sm:gap-6 text-slate-300">
+        <a class="text-sm font-medium hover:underline underline-offset-4 tracking-[0.2rem]" href="#">
           Projects
         </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        <a class="text-sm font-medium hover:underline underline-offset-4 tracking-[0.2rem]" href="#">
           About
         </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        <a class="text-sm font-medium hover:underline underline-offset-4 tracking-[0.2rem]" href="#">
           Contact
         </a>
       </nav>
     </header>
-    <main class="flex-1">
-      <!-- Hero section -->
-      <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-        <div class="container px-4 md:px-6">
-          <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-            <div class="flex flex-col justify-center space-y-4">
-              <div class="space-y-2">
-                <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Yadunandana D Kulkarni</h1>
-                <h2 class="text-xl font-medium text-muted-foreground">Fullstack Developer</h2>
-                <p class="max-w-[600px] text-muted-foreground md:text-xl">
-                  I'm a passionate software engineer with a focus on building scalable and user-friendly web
-                  applications. with a focus on building
-                </p>
-              </div>
 
-              <div class="flex flex-col gap-2 min-[400px]:flex-row">
-                <a href="#"
-                  class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                  View Projects
-                </a>
-                <a href="#"
-                  class="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                  Contact Me
-                </a>
-              </div>
-            </div>
-            <img src="https://placeholder.co/100x100/png" alt="Hero" class="" />
-          </div>
-        </div>
-      </section>
-      <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
-        <div class="container px-4 md:px-6">
-          <div class="flex flex-col items-center justify-center space-y-4 text-center">
-            <div class="space-y-2">
-              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Featured Projects</div>
-              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">My Recent Work</h2>
-              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Check out some of the projects I've worked on recently.
-              </p>
-            </div>
-          </div>
-          <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            <div class="flex flex-col justify-center space-y-4">
-              <div class="grid gap-1">
-                <h3 class="text-xl font-bold">Project 1</h3>
-                <p class="text-muted-foreground">
-                  A web application that helps users manage their tasks and projects.
-                </p>
-                <div class="flex gap-2">
-                  <a class="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    href="#">
-                    View Project
-                  </a>
-                  <a class="inline-flex h-8 items-center justify-center rounded-md border border-input bg-background px-4 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    href="#">
-                    GitHub
-                  </a>
-                </div>
-              </div>
-              <div class="grid gap-1">
-                <h3 class="text-xl font-bold">Project 2</h3>
-                <p class="text-muted-foreground">A web-based e-commerce platform for selling handmade products.</p>
-                <div class="flex gap-2">
-                  <a href="#"
-                    class="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                    View Project
-                  </a>
-                  <a href="#"
-                    class="inline-flex h-8 items-center justify-center rounded-md border border-input bg-background px-4 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-            <img src="/placeholder.svg" width="550" height="310" alt="Projects"
-              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last" />
-          </div>
-        </div>
-      </section>
-      <section class="w-full py-12 md:py-24 lg:py-32">
-        <div class="container px-4 md:px-6">
-          <div class="flex flex-col items-center justify-center space-y-4 text-center">
-            <div class="space-y-2">
-              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Education</div>
-              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">My Educational Background</h2>
-              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Check out my educational background and the degrees I've earned.
-              </p>
-            </div>
-          </div>
-          <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            <div class="flex flex-col justify-center space-y-4">
-              <div class="grid gap-1">
-                <h3 class="text-xl font-bold">Bachelor's Degree</h3>
-                <p class="text-muted-foreground">Computer Science, University of XYZ (2014 - 2018)</p>
-                <p class="text-muted-foreground">
-                  Graduated with a 3.8 GPA and completed several projects and internships.
-                </p>
-              </div>
-              <div class="grid gap-1">
-                <h3 class="text-xl font-bold">Master's Degree</h3>
-                <p class="text-muted-foreground">Computer Engineering, University of ABC (2018 - 2020)</p>
-                <p class="text-muted-foreground">
-                  Focused on advanced topics in software engineering and machine learning.
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col justify-center space-y-4">
-              <div class="grid gap-1">
-                <h3 class="text-xl font-bold">Certifications</h3>
-                <div class="flex flex-wrap gap-2">
-                  <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">AWS Certified Developer</div>
-                  <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Scrum Master Certified</div>
-                  <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">React.js Certified</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="w-full py-12 md:py-24 lg:py-32">
-        <div class="container px-4 md:px-6">
-
-          <div class="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2">
-            <div class="space-y-4">
-              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About Me</div>
-              <h2
-                class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
-                Get to Know Me
-              </h2>
-              <p class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I'm a passionate software engineer with a strong background in full-stack web development. I love
-                building scalable and user-friendly applications that solve real-world problems.
-              </p>
-              <a href="#"
-                class="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                Learn More
-              </a>
-            </div>
-            <div class="flex flex-col items-start space-y-4">
-              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Contact Me</div>
-
-              <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-                Feel free to reach out to me if you have any questions or would like to discuss a potential project.
-              </p>
-              <form class="w-full max-w-md space-y-4">
-                <input
-                  class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
-                  placeholder="Name" type="text" />
-                <input
-                  class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
-                  placeholder="Email" type="email" />
-                <textarea
-                  class="flex min-h-[80px] rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
-                  placeholder="Message"></textarea>
-                <button
-                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
-                  type="submit">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="w-full py-12 md:py-24 lg:py-32">
-        <div class="container px-4 md:px-6">
-          <div class="flex flex-col items-center justify-center space-y-4 text-center">
-            <div class="space-y-2">
-              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Experience</div>
-              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">My Work Experience</h2>
-              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Check out my work experience and the companies I've worked for.
-              </p>
-            </div>
-          </div>
-          <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            <div class="flex flex-col justify-center space-y-4">
-              <div class="grid gap-1">
-                <h3 class="text-xl font-bold">Software Engineer</h3>
-                <p class="text-muted-foreground">Acme Inc. (2021 - Present)</p>
-                <p class="text-muted-foreground">
-                  Responsible for building and maintaining scalable web applications using React, Node.js, and
-                  MongoDB.
-                </p>
-              </div>
-              <div class="grid gap-1">
-                <h3 class="text-xl font-bold">Web Developer</h3>
-                <p class="text-muted-foreground">XYZ Corp. (2018 - 2021)</p>
-                <p class="text-muted-foreground">Developed and maintained responsive web appli</p>
-
-              </div>
-            </div>
-            <div class="flex flex-col justify-center space-y-4">
-              <div class="grid gap-1">
-                <h3 class="text-xl font-bold">Skills</h3>
-                <div class="flex flex-wrap gap-2">
-                  <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">React</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main class="">
+      <p class="text-gray-300 flex justify-end text-right text-[48px] xl:mx-12 xl:text-[128px] md:text-[98px] sm:text-[78px]"
+        style="font-family: Impact, sans-serif;">
+        Yadunandana <br>D Kulkarni
+      </p>
+      <div class="flex justify-end xl:mx-12 md:mx-12 sm:mx-12">
+        <button
+          class="text-gray-300 text-lg px-8 py-3 rounded-[40px] bg-zinc-800 md:border-4 border-2 border-gray-300 md:text-[35px] md:px-11 md:py-6 hover:bg-gray-300 hover:text-zinc-800"
+          style="font-family: Impact, sans-serif;">
+          <a href="assets/Resume template (Community).pdf" download="YDKulkarni.pdf" class="no-underline">Hire Me
+          </a>
+        </button>
+      </div>
+      <div class="flex justify-end my-40 xl:mx-12 md:mx-12 sm:mx-12">
+        <p class="text-gray-300 text-lg text-center w-5/12" style="font-family: sans-serif;">
+          Fullstack developer with a master’s degree in fullstack development,
+          passionate about web technologies
+          across front-end and back-end. Committed to continuous learning.</p>
+      </div>
     </main>
   </div>
 
