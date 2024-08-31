@@ -16,17 +16,17 @@
 </head>
 
 <body class="bg-[rgb(32,32,32)]">
-  <img src="assets/HeroTop.png" alt="HeroTop" class="absolute top-0 right-0 object-cover z-0" />
-  <img src="assets/HeroBottom.png" alt="HeroBottom" class="absolute top-40 left-0 object-cover z-0" />
-  <img src="assets/HeroCircle.png" alt="HeroCircle" class="absolute top-52 left-48 object-cover z-0" />
+  <div class="relative">
+    <img src="assets/HeroTop.png" alt="HeroTop" class="absolute top-0 right-0 object-cover z-0" />
+    <img src="assets/HeroBottom.png" alt="HeroBottom"
+      class="absolute top-80 left-0 object-cover z-0 w-5/12 h-auto xl:w-auto xl:h-auto xl:top-40 md:w-6/12 md:h-auto md:top-40 sm:w-5/12 sm-h-auto sm:top-64" />
+    <img src="assets/HeroCircle.png" alt="HeroCircle"
+      class="absolute z-0 w-40 h-auto top-40 left-5 xl:w-4/12 md:top-52 md:left-32 md:w-64 sm:top-52 sm:left-16 sm:w-52" />
+  </div>
   <div class="relative z-20">
     <header class="px-4 lg:px-6 h-14 flex items-center xl:mx-12">
       <a class="flex items-center justify-center text-slate-300" href="https://ydkulks.github.io" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-          <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-        </svg>
-        <span class="sr-only">Portfolio</span>
+        <p class="text-sm font-medium tracking-[0.2rem]">Portfolio</p>
       </a>
       <nav class="ml-auto flex gap-4 sm:gap-6 text-slate-300">
         <a class="text-sm font-medium hover:underline underline-offset-4 tracking-[0.2rem]" href="#">
@@ -54,14 +54,27 @@
           </a>
         </button>
       </div>
-      <div class="flex justify-end my-40 xl:mx-12 md:mx-12 sm:mx-12">
-        <p class="text-gray-300 text-lg text-center w-5/12" style="font-family: sans-serif;">
+      <div class="flex justify-end mr-2 mt-20 xl:mt-40 xl:mr-10 md:mt-20 md:mr-5 sm:mt-16">
+        <p class="text-gray-300 text-lg text-right w-9/12 xl:w-5/12 md:w-7/12 sm:w-6/12"
+          style="font-family: sans-serif;">
           Fullstack developer with a master’s degree in fullstack development,
           passionate about web technologies
           across front-end and back-end. Committed to continuous learning.</p>
       </div>
     </main>
+
   </div>
+
+  <!-- Grid -->
+  <!--
+  <div class="flex flex-wrap mt-20 xl:mt-40 md:mt-40 sm:mt-40">
+    <div class="w-full md:w-1/2 bg-gray-300 p-4 text-center z-10">
+      Div 1
+    </div>
+    <div class="w-full md:w-1/2 bg-gray-400 p-4 text-center z-10">
+      Div 2
+    </div>
+  </div>-->
 
 </body>
 
