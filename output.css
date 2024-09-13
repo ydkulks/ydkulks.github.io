@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -565,6 +569,18 @@ video {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
 .flex {
@@ -583,6 +599,14 @@ video {
   height: 3.5rem;
 }
 
+.h-\[150px\] {
+  height: 150px;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -593,6 +617,10 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -611,6 +639,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -619,16 +651,26 @@ video {
   white-space: nowrap;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
 
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {
@@ -670,6 +712,19 @@ video {
   padding-left: 30px;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -678,6 +733,10 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -692,6 +751,11 @@ video {
   letter-spacing: 0.2rem;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-gray-50 {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
@@ -701,16 +765,17 @@ video {
   color: transparent;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
 
 .underline-offset-4 {
   text-underline-offset: 4px;
-}
-
-.outline {
-  outline-style: solid;
 }
 
 .transition-colors {
@@ -769,6 +834,11 @@ video {
   .sm\:gap-6 {
     gap: 1.5rem;
   }
+
+  .sm\:px-0\.5 {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -784,8 +854,18 @@ video {
     flex-direction: row;
   }
 
+  .md\:px-0\.5 {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
   .md\:pl-\[56px\] {
     padding-left: 56px;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -807,13 +887,18 @@ video {
     padding-right: 1.5rem;
   }
 
+  .lg\:px-\[15vw\] {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
   .lg\:pl-\[100px\] {
     padding-left: 100px;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -821,5 +906,10 @@ video {
   .xl\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .xl\:px-\[25vw\] {
+    padding-left: 25vw;
+    padding-right: 25vw;
   }
 }
