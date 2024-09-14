@@ -10,11 +10,9 @@
 
 
 /* Track */
-/*
-  ::-webkit-scrollbar-track {
-    background: #262626;
-  }
-  */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -31,10 +29,6 @@
 
 .text-border {
   -webkit-text-stroke: 2px black;
-}
-
-.text-impact {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .skill-hidden {
