@@ -2,14 +2,28 @@ window.onscroll = function() { makeNavbarSticky(); };
 
 function makeNavbarSticky() {
   const navbar = document.getElementById("navbar");
+  const navbar_sm = document.getElementById("navbar_small");
+  const menu = document.getElementById("menu");
   const stickyPoint = 100; // Change this value to set the distance
   // xl:mx-12
   if (window.scrollY >= stickyPoint) {
     navbar.classList.add("sticky");
     navbar.classList.remove("xl:mx-12")
+    // Small
+    navbar_sm.classList.add("sticky");
+    navbar_sm.classList.remove("xl:mx-12")
+    // Menu
+    menu.classList.add("sticky");
+    menu.classList.remove("xl:mx-12")
   } else {
     navbar.classList.remove("sticky");
     navbar.classList.add("xl:mx-12")
+    // Small
+    navbar_sm.classList.remove("sticky");
+    navbar_sm.classList.add("xl:mx-12")
+    // Menu
+    menu.classList.remove("sticky");
+    menu.classList.add("xl:mx-12")
   }
 }
 
@@ -57,4 +71,10 @@ window.onload = function() {
       });
 
   });
+}
+
+// Toggle Menu
+function toggleMenu(){
+  const menu = document.getElementById("menu")
+  menu.classList.toggle("hidden")
 }
