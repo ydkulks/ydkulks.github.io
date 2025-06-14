@@ -183,7 +183,7 @@ export const DATA = {
     },
     {
       title: "PantryPal",
-      href: "https://magicui.design",
+      href: "https://pantry-pal-seven.vercel.app/",
       dates: "March 2023 - July 2023",
       active: true,
       description:

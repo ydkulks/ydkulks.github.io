@@ -31,6 +31,7 @@ export default async function BlogPage() {
             <Link
               className="flex flex-col space-y-1 mb-4"
               href={`/blog/${post.slug}`}
+              target="_blank"
             >
               <div className="w-full flex flex-col">
                 <p className="tracking-tight">{post.metadata.title}</p>

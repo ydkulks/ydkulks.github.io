@@ -27,7 +27,7 @@ export function TestimonialCard({
 }: TestimonialCardProps) {
   return (
     <Card className="border shadow-sm p-5 hover:shadow-md transition-shadow duration-200">
-      <CardHeader className="flex flex-row justify-between">
+      <CardHeader className="flex flex-row justify-between gap-2">
 
         {/*Left side*/}
         <div className="flex flex-row items-center gap-4 pb-2">
@@ -49,10 +49,10 @@ export function TestimonialCard({
 
         {/*Right side*/}
         <div className="flex flex-col gap-0.5">
-          <Link href={socialUrl} className="inline-flex justify-end text-muted-foreground hover:text-blue-500">
+          <Link href={socialUrl} target="_blank" className="inline-flex justify-end text-muted-foreground hover:text-blue-500">
             <SocialIcon />
           </Link>
-          <p className="text-xs text-muted-foreground">{date}</p>
+          <p className="text-end text-xs text-muted-foreground">{date}</p>
         </div>
 
       </CardHeader>
